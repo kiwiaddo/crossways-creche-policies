@@ -1,0 +1,21 @@
+---
+label: Policy
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: Title of this policy
+  config:
+    required: true
+- type: textarea
+  name: body
+  label: Body
+  description: Body of the policy
+- type: select
+  name: status
+  config:
+    source:
+      type: datafiles
+  label: Status
